@@ -24,12 +24,14 @@ All the values displayed are in milligrams:
 Schema for the project:
 ![Schema](https://user-images.githubusercontent.com/85441257/218472406-07bca278-9036-474d-9a5a-20a98c88907e.png)
 
-## For local setup followup the following steps :
+## For local setup follow the following steps :
 
 Open mysql command line client and follow the following steps.
 Paste following commands.
 
 create database geeklogin;
+
+use geeklogin;
 
 create table accounts
 (  
@@ -40,7 +42,7 @@ email varchar(100),
 PRIMARY KEY (ID)
 );
 
-CREATE TABLE nutrients (
+create table nutrients (
 fid int PRIMARY KEY auto_increment,
 fname varchar(100),
 u_id int,
